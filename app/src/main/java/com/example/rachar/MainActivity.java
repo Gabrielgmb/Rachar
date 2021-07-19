@@ -26,10 +26,6 @@ public class MainActivity extends AppCompatActivity {
     TextToSpeech textToSpeech;
 
     String Resultado;
-    String message = getResources().getString(R.string.message);
-    String compute = getResources().getString(R.string.compute);
-
-
 
 
     @Override
@@ -98,13 +94,13 @@ public class MainActivity extends AppCompatActivity {
                 DecimalFormat decimal = new DecimalFormat("0.00");
                 String valorFormatado = decimal.format(result);
 
-                Resultado = valorFormatado + " "+ message;
+                Resultado = valorFormatado + " reais para cada pessoa";
                 txtResultado.setText("R$: "+ valorFormatado);
 
                 shareBtn.setVisibility(View.VISIBLE);
                 btnTTS.setVisibility(View.VISIBLE);
             }else{
-                Resultado = compute;
+                Resultado = "Impossivel de ser computado";
                 txtResultado.setText(Resultado);
 
                 shareBtn.setVisibility(View.VISIBLE);

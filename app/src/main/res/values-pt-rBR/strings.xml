@@ -8,6 +8,6 @@
     <string name="TTS_button_desc">" Síntese de fala diz o resultado da divisão"</string>
     <string name="icon_input_money">icone referente ao campo de dinheiro</string>
     <string name="icon_input_people">icone referente ao campo de quantidade de pessoas</string>
-    <string name="message">reais para cada pessoa</string>
-    <string name="compute">Impossivel de ser computado</string>
+    <string name="message_result">reais para cada pessoa</string>
+    <string name="message_error">Impossivel de ser computado</string>
 </resources>

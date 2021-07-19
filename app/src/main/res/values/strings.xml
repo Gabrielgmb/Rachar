@@ -7,6 +7,6 @@
     <string name="TTS_button_desc">Text-to-Speech to say the result of the division</string>
     <string name="icon_input_money">money field icon</string>
     <string name="icon_input_people">people field icon</string>
-    <string name="message">dollars for each person</string>
-    <string name="compute">Impossible to compute</string>
+    <string name="message_result">dollars for each person</string>
+    <string name="message_error">Impossible to compute</string>
 </resources>
