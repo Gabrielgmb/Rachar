@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rachar</string>
+    <string name="title_name">Vamos rachar</string>
+    <string name="input_money">Quantia em dinheiro</string>
+    <string name="input_people">"Quantia de pessoas "</string>
+    <string name="share_button_desc">compartilhar resultado da divisão</string>
+    <string name="TTS_button_desc">" Síntese de fala diz o resultado da divisão"</string>
+    <string name="icon_input_money">icone referente ao campo de dinheiro</string>
+    <string name="icon_input_people">icone referente ao campo de quantidade de pessoas</string>
+    <string name="message">reais para cada pessoa</string>
+    <string name="compute">Impossivel de ser computado</string>
+</resources>

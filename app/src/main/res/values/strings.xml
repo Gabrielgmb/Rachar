@@ -1,3 +1,12 @@
 <resources>
+    <string name="title_name">Let\'s split</string>
+    <string name="input_money">Amount of money</string>
     <string name="app_name">Rachar</string>
+    <string name="input_people">Amount of people</string>
+    <string name="share_button_desc">share split result</string>
+    <string name="TTS_button_desc">Text-to-Speech to say the result of the division</string>
+    <string name="icon_input_money">money field icon</string>
+    <string name="icon_input_people">people field icon</string>
+    <string name="message">dollars for each person</string>
+    <string name="compute">Impossible to compute</string>
 </resources>

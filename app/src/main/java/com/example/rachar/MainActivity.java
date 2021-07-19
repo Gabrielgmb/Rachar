@@ -17,6 +17,7 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
+
     EditText edtValor,edtQuantidade;
     TextView txtResultado;
     FloatingActionButton shareBtn,btnTTS;
@@ -25,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
     TextToSpeech textToSpeech;
 
     String Resultado;
+    String message = getResources().getString(R.string.message);
+    String compute = getResources().getString(R.string.compute);
 
 
 
@@ -47,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onInit(int status) {
                 if (status == TextToSpeech.SUCCESS){
-                    int lang = textToSpeech.setLanguage(new Locale ("pt", "BR"));
+                    int lang = textToSpeech.setLanguage(Locale.getDefault());
                 }
             }
         });
@@ -95,13 +98,13 @@ public class MainActivity extends AppCompatActivity {
                 DecimalFormat decimal = new DecimalFormat("0.00");
                 String valorFormatado = decimal.format(result);
 
-                Resultado = valorFormatado + " reais para cada pessoa";
+                Resultado = valorFormatado + " "+ message;
                 txtResultado.setText("R$: "+ valorFormatado);
 
                 shareBtn.setVisibility(View.VISIBLE);
                 btnTTS.setVisibility(View.VISIBLE);
             }else{
-                Resultado = "Impossivel de ser computado";
+                Resultado = compute;
                 txtResultado.setText(Resultado);
 
                 shareBtn.setVisibility(View.VISIBLE);
